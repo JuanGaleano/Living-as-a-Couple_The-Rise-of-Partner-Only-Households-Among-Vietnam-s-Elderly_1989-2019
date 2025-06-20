@@ -1139,8 +1139,6 @@ ggsave("FIG3.tiff",
        dpi = 300,
        path ="G:\\Shared drives\\CORESIDENCE\\TEAM FOLDERS\\Juan Galeano\\VNM\\figures")
 
-
-
 # REGIONAL VARIABLES #######
 # Compute population by region to weight emigration and house ownership rates ######
 pop_geolevel<-lapply(vnm_list, function(df) {
@@ -1718,10 +1716,10 @@ a<-grid.arrange(
   ncol = 2
 )
 
-ggsave(paste("G:\\Shared drives\\CORESIDENCE\\TEAM FOLDERS\\Juan Galeano\\VNM\\",
-             "Multiplot.png",sep=""), # name of the file of the image
+ggsave("FIG4.tiff", # name of the file of the image
        plot=a,
        scale = .9, 
        dpi = 300,     
        height =10, #25  #10 
-       width = 12)
+       width = 12,
+       path ="G:\\Shared drives\\CORESIDENCE\\TEAM FOLDERS\\Juan Galeano\\VNM\\figures")
